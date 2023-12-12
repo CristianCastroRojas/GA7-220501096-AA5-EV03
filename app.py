@@ -13,11 +13,11 @@ def index():
 def registrar_cliente():
     if request.method == 'POST':
         nombre = request.form['nombre'].strip()
-        apellido = request.form['apellido']
-        nombre_comercial = request.form['nombreComercial']
-        correo = request.form['correoElectronico']
-        telefono = request.form['telefono']
-        ciudad = request.form['ciudad']
+        apellido = request.form['apellido'].strip()
+        nombre_comercial = request.form['nombreComercial'].strip()
+        correo = request.form['correoElectronico'].strip()
+        telefono = request.form['telefono'].strip()
+        ciudad = request.form['ciudad'].strip()
         comentarios = request.form['comentarios']
 
         # Crea un diccionario con los datos del cliente
